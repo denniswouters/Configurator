@@ -1,6 +1,5 @@
 <?php include 'header.php';?>
 
-
     <div class="container center blocks">
     <div class="row justify-content-center">
         <div class="col-lg-3">

@@ -31,6 +31,7 @@
 
 body {
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .tile {
@@ -186,6 +187,45 @@ body {
   /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;
   /* Add a pointer on hover */
+}
+
+.uitleg {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.uitleg h1 {
+  font: 1.8em "Orbitron", sans-serif;
+  font-weight: bold;
+  margin-left: 26px;
+}
+
+.uitleg ol {
+  font: 0.9em "Comfortaa", cursive;
+  line-height: 1.4em;
+}
+
+.uitleg li {
+  margin-top: 20px;
+}
+
+.uitleg .vl {
+  border-left: 1px solid darkgray;
+  margin: 0px 20px 0px 20px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
