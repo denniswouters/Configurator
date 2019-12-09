@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.page .dragmenuItem {
+  border-radius: 0px;
+}
+
 body {
   background-color: #ffffff;
   overflow: hidden;

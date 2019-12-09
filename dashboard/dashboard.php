@@ -2,16 +2,16 @@
 
     <div class="container">
     <div class="row">
-        <div class="dragmenu col-lg-4">
+        <div class="dragmenu col-lg-4" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="row">
                   <div class="col-lg-6">
-                            <div class="dragmenuItem">
+                            <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag1">
                                     <img src="img/dots.png" class="dots center">
                                     <p>Introductie</p>
                             </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="dragmenuItem">
+                        <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag1">
                         <img src="img/dots.png" class="dots center">
                         <p>Introductie</p>
                         </div>
@@ -189,9 +189,10 @@
                 </div>
             </div>
 
+                    
                         <div class="col-lg-7 offset-lg-1">
                                     <div class="row">
-                                        <div class="page col-lg-3">
+                                        <div class="page col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)">
                                             <div class="page-label">
                                                 Homepagina
                                             </div>
@@ -217,13 +218,7 @@
                                     </div>
                                     </div>
                                 </div>
-
-        
-        
                             </div>
     
-    
-    
-    </div>
 
 <?php include 'footer.php';?>

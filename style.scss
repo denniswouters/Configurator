@@ -45,6 +45,21 @@ $cfgreen: #5AC3AA;
     text-align: center;
     cursor: pointer;
 }
+// -
+#div1, #div2 {
+
+  }
+  
+.item{
+
+  }
+// -
+
+.page {
+    .dragmenuItem {
+        border-radius: 0px;
+    }
+}
 
 // Algemene CSS
 body {
@@ -235,6 +250,10 @@ body {
         margin: 0px 20px 0px 20px;
       }
 }
+
+
+
+
   // Media Queries
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
