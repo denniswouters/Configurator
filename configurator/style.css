@@ -1,0 +1,301 @@
+.logo {
+  position: absolute;
+  width: 200px;
+  top: 50px;
+  left: 150px;
+}
+
+.corner {
+  position: absolute;
+  width: 150px;
+  left: 0;
+  top: 0;
+}
+
+.header {
+  width: 100%;
+  height: 180px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.button {
+  font: 100% "Comfortaa", cursive;
+  padding: 10px 20px;
+  background-color: #5AC3AA;
+  color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.page .dragmenuItem {
+  border-radius: 0px;
+}
+
+body {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.tile {
+  background-color: #f1f1f1;
+  height: 220px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font: 80% "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 10px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #ffffff;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hospitality {
+  background-image: url("../configurator/dashboard/img/hospitality.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.col-lg-3 a {
+  color: #202653;
+}
+
+.col-lg-3 a:visited, .col-lg-3 a:active, .col-lg-3 a:hover {
+  color: #202653;
+  text-decoration: none;
+}
+
+.dragmenu {
+  background-color: #f1f1f1;
+  height: 800px;
+  width: 500px;
+  bottom: 0px;
+  overflow: scroll;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dragmenuItem {
+  font: 80% "Comfortaa", cursive;
+  background-color: #ffffff;
+  position: relative;
+  color: #202653;
+  text-align: center;
+  margin-top: 5px;
+  margin: 10px 0px;
+  padding: 20px !important;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.dragmenuItem p {
+  margin-bottom: 0rem !important;
+  margin-left: 20px;
+}
+
+.dots {
+  width: 10px;
+  display: block;
+  left: 20px;
+}
+
+.page {
+  height: 35vw;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 5px;
+}
+
+.page-label {
+  font: 80% "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  text-align: center;
+  color: #202653;
+}
+
+.addPage {
+  height: 35vw;
+  background-color: #ffffff;
+  border-color: #202653;
+  border-radius: 20px;
+  border-style: dashed;
+  border-width: 1px;
+  position: relative;
+}
+
+.addPageText {
+  font: "Orbitron", sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.multi {
+  width: 15px;
+}
+
+.offset-lg-0 {
+  margin-left: 20px !important;
+}
+
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
+.uitleg {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.uitleg h1 {
+  font: 1.8em "Orbitron", sans-serif;
+  font-weight: bold;
+  margin-left: 26px;
+}
+
+.uitleg ol {
+  font: 0.9em "Comfortaa", cursive;
+  line-height: 1.4em;
+}
+
+.uitleg li {
+  margin-top: 20px;
+}
+
+.uitleg .vl {
+  border-left: 1px solid darkgray;
+  margin: 0px 20px 0px 20px;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+#columns {
+  list-style-type: none;
+}
+
+.dragmenuItem {
+  width: 162px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  cursor: move;
+}
+
+.dragmenuItem header {
+  height: 20px;
+  width: 150px;
+  color: black;
+  background-color: #ccc;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  border: 2px solid #666666;
+}
+
+.dragmenuItem.dragElem {
+  opacity: 0.4;
+}
+
+.dragmenuItem.over {
+  border-top: 2px solid blue;
+}
+
+.page-sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    margin-top: 720px;
+  }
+  .logo {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
