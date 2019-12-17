@@ -1,163 +1,168 @@
 <?php include 'header.php';?>
 
-    <div class="container">
+<style>
+.pageContainer {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+}
+.page {
+  position: unset !important;
+}
+.page, .addPage {
+  width: 13vw !important;
+  display: inline-block !important;
+  margin-right: 2vw;
+}
+.page-label input {
+  width: 90%;
+  background-color: transparent;
+  border: 0;
+  font-weight: 600;
+  pointer-events: none;
+}
+.page-label input.editable {
+  pointer-events: unset;
+}
+.page-label img {
+  cursor: pointer;
+}
+</style>
+
+    <div class="container-fluid" style="padding:0 10vw">
     <div class="row">
         <div class="dragmenu col-lg-4" id="dragmenu" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="row">
                   <div class="col-lg-6">
                             <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag1">
                                     <img src="img/dots.png" class="dots center">
-                                    <p>Introductie 1</p>
+                                    <p>Boek/reserveer plugin</p>
                             </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag2">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie 2</p>
+                        <p>Recensies</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag3">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie 3</p>
+                        <p>Concept omschrijving</p>
                         </div>
                 </div>
                 <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag4">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie 4</p>
+                        <p>Prijsoverzicht</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                             <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag5">
                             <img src="img/dots.png" class="dots center">
-                            <p>Introductie 5</p>
+                            <p>Boek/reserveer plugin</p>
                             </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag6">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie 6</p>
+                        <p>Boek/reserveer zonder plugin</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag7">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Menukaart</p>
                         </div>
                 </div>
                 <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag8">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Fotogallerij</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                             <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag9">
                             <img src="img/dots.png" class="dots center">
-                            <p>Introductie</p>
+                            <p>Contactformulier</p>
                             </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag10">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Interactieve kaart</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag11">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Routebeschrijving</p>
                         </div>
                 </div>
                 <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag12">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Vestigingen</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                             <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag13">
                             <img src="img/dots.png" class="dots center">
-                            <p>Introductie</p>
+                            <p>Vacatures</p>
                             </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag14">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Sollicitatie formulier</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag15">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Sollicitatie procedure</p>
                         </div>
                 </div>
                 <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag16">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Geschiedenis</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                             <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag17">
                             <img src="img/dots.png" class="dots center">
-                            <p>Introductie</p>
+                            <p>Prijslijst</p>
                             </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag18">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Aanbiedingen</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag19">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Nieuwsoverzicht</p>
                         </div>
                 </div>
                 <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag20">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Blog</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag21">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Activiteiten</p>
                         </div>
                 </div>
                 <div class="col-lg-6">
                         <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag22">
                         <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
-                        </div>
-                </div>
-                <div class="col-lg-6">
-                        <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag23">
-                        <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
-                        </div>
-                </div>
-                <div class="col-lg-6">
-                        <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag24">
-                        <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
-                        </div>
-                </div>
-                <div class="col-lg-6">
-                        <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag25">
-                        <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
-                        </div>
-                </div>
-                <div class="col-lg-6">
-                        <div class="dragmenuItem" draggable="true" ondragstart="drag(event)" id="drag26">
-                        <img src="img/dots.png" class="dots center">
-                        <p>Introductie</p>
+                        <p>Informatie</p>
                         </div>
                 </div>
                 </div>
@@ -191,20 +196,23 @@
 
 
                         <div class="col-lg-7 offset-lg-1">
-                                    <div class="row">
-                                        <div class="page col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                            <div class="page-label">
-                                                Homepagina
-                                            </div>
-                                            <div class="page-sortable">
+                        <div class="pageContainer">
+                                    <div class="">
+                                            <div class="page col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                                <div class="page-label">
+                                                    <input type="text" value="Homepagina"><img width="16px" height="auto" src="img/edit-page-label.png"/>
+                                                </div>
+                                                <div class="page-sortable">
 
-                                            </div>
-                                       </div>
-                                       <div class="addPage col-lg-3 offset-lg-1">
+                                                </div>
+                                        </div>
+
+                                       <div class="addPage col-lg-3">
                                             <div class="addPageText">
                                                 +
                                             </div>
                                        </div>
+                                    </div>
                                     </div>
                                     <div class="mt-5">
                                     <div class="row">
@@ -213,10 +221,11 @@
                                                 <img src="img/multi.png" class="multi">
                                             </div>
                                         </div>
-                                        <div class="button col-lg-3 offset-lg-0">
+                                        <div class="button col-lg-3 offset-lg-0"><a href="confirmation.php">
                                             <div class="export">
                                                 Exporteren
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     </div>

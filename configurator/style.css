@@ -25,12 +25,22 @@
   background-color: #5AC3AA;
   color: #ffffff;
   border-radius: 20px;
+  border: 0px !important;
   text-align: center;
   cursor: pointer;
 }
 
 .page .dragmenuItem {
   border-radius: 0px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 body {
@@ -87,6 +97,7 @@ body {
 }
 
 .dragmenu {
+  padding: 10px;
   background-color: #f1f1f1;
   height: 800px;
   width: 500px;
@@ -139,7 +150,7 @@ body {
   text-transform: uppercase;
   font-weight: bolder;
   border-radius: 20px 20px 0px 0px;
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   color: #202653;
 }
@@ -148,6 +159,7 @@ body {
   height: 35vw;
   background-color: #ffffff;
   border-color: #202653;
+  opacity: 0.6;
   border-radius: 20px;
   border-style: dashed;
   border-width: 1px;
@@ -170,6 +182,21 @@ body {
 
 .multi {
   width: 15px;
+}
+
+.delete {
+  margin-left: 20;
+  padding: 7px 10px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background: #5AC3AA;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: #202653 !important;
+  font: 100% "Orbitron", sans-serif;
+  font-size: 12px;
 }
 
 .offset-lg-0 {
@@ -251,7 +278,6 @@ body {
 }
 
 .dragmenuItem {
-  width: 162px;
   padding-bottom: 5px;
   padding-top: 5px;
   text-align: center;
@@ -278,11 +304,46 @@ body {
 }
 
 .page-sortable {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100%;
+  height: 35vw;
+}
+
+.pageContainer {
+  overflow: scroll;
+  border-radius: 20px;
+  padding: 0px 20px 0px 20px;
+}
+
+.button a:visited {
+  color: #ffffff;
+}
+
+.confirmation {
+  text-align: center;
+  width: 60%;
+}
+
+.confirmation h1 {
+  font: 150% "Orbitron", sans-serif !important;
+  margin-bottom: 20px;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  color: #202653;
+}
+
+.confirmation p {
+  font: 100% "Comfortaa", cursive !important;
+  line-height: 1.6 !important;
+  margin-bottom: 50px;
+}
+
+.text-input {
+  font: 100% "Comfortaa", cursive;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  border-width: 0px;
+  color: gray;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

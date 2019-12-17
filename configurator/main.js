@@ -40,7 +40,7 @@ function drop(ev) {
 
     dataDiv = document.getElementById(data);
 
-    if ($(document.getElementById(data)).parents('.page').length){
+    if ($(document.getElementById(data)).parents('.page').length || $(ev.target).parents('.dragmenu').length ){
       console.log("binnen page");
     } else {
       jQuery(document.getElementById(data)).clone().appendTo(ev.target);
@@ -134,17 +134,6 @@ var cols = document.querySelectorAll('.page .dragmenuItem');
 [].forEach.call(cols, addDnDHandlers);
 
 
-
-
-
-
-
-
-
-
-
-
-
 // toevoegen page
 
 $(document).ready(function() {
@@ -158,14 +147,27 @@ $(document).ready(function() {
         if (x < max_fields) {
             x++;
             // $(wrapper).parent().prepend('<div class="page col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="page-label">Homepagina</div><a href="#" class="delete">Delete</a></div>');
-            $('<div class="page offset-lg-1 col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="page-label">Homepagina</div><a href="#" class="delete">Delete</a></div>').insertBefore(".addPage");
+            $('<div class="page col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)"><div class="page-label"><input type="text" value="Nieuwe pagina"><img width="16px" height="auto" src="img/edit-page-label.png"/></div><a href="#" class="delete">X</a></div>').insertBefore(".addPage");
         } else {
             alert('Maximaal aantal tabbladen bereikt')
         }
+        $('.pageContainer').animate( { scrollLeft: '+=460' }, 500);
+
+        // jQuery.easing.def = 'easeOutBounce';
+        // $('.pageContainer').animate({"margin-left": '200'}, 'slow');
+
     });
 
     $(document).on("click", ".delete", function() {
       $(this).parent().remove();
       x--;
     });
+
+    $(document).on("click", ".page-label img", function() {
+      $(this).prev().addClass("editable");
+      // $(this).prev().trigger( "focus" );
+      $(this).prev().select();
+    });
+
+
 });
